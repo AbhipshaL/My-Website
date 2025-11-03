@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDFC Project - uLearn Case Study</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            /* Changed from 'fixed' to 'absolute' */
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.15);
+            -webkit-backdrop-filter: blur(10px); 
+            backdrop-filter: blur(10px);
+            color: #004C8F;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .case-study-image {
+            width: 100%; 
+            height: auto; 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="w-full p-6 md:p-8">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <a href="index.html" class="text-2xl font-bold">Abhipsha.</a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="work.html" class="hover:text-gray-300 transition-colors">Work</a>
+                <a href="about.html" class="hover:text-gray-300 transition-colors">About</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Contact</a>
+            </div>
+            <button class="md:hidden p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <img src="hdfc.png" alt="HDFC uLearn case study details" class="case-study-image">
+
+</body>
+</html>
